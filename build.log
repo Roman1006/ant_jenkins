@@ -1,0 +1,60 @@
+Started by timer
+Running as SYSTEM
+Building in workspace D:\Jenkins\workspace\全流程验证
+No emails were triggered.
+[全流程验证] $ cmd.exe /C "E:\apache-ant-1.10.9\bin\ant.bat run && exit %%ERRORLEVEL%%"
+Buildfile: D:\Jenkins\workspace\全流程验证\build.xml
+
+run:
+
+test:
+   [jmeter] Executing test plan: E:\apache-jmeter-5.3\bin\test\Java_all\Java全流程验证.jmx ==> E:\apache-jmeter-5.3\bin\test\Java_all\jmeter_report\jtl\onlineCountTaskCheck202102270244.jtl
+   [jmeter] Creating summariser <summary>
+   [jmeter] Created the tree successfully using E:\apache-jmeter-5.3\bin\test\Java_all\Java全流程验证.jmx
+   [jmeter] Starting standalone test @ Sat Feb 27 14:44:05 CST 2021 (1614408245518)
+   [jmeter] Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+   [jmeter] summary +     57 in 00:00:25 =    2.3/s Avg:   425 Min:    37 Max:  3654 Err:    16 (28.07%) Active: 1 Started: 1 Finished: 0
+   [jmeter] summary +      2 in 00:00:00 =    4.0/s Avg:   227 Min:     1 Max:   454 Err:     1 (50.00%) Active: 0 Started: 1 Finished: 1
+   [jmeter] summary =     59 in 00:00:25 =    2.4/s Avg:   418 Min:     1 Max:  3654 Err:    17 (28.81%)
+   [jmeter] Tidying up ...    @ Sat Feb 27 14:44:30 CST 2021 (1614408270669)
+   [jmeter] ... end of run
+
+report:
+     [xslt] Processing E:\apache-jmeter-5.3\bin\test\Java_all\jmeter_report\jtl\onlineCountTaskCheck202102270244.jtl to E:\apache-jmeter-5.3\bin\test\Java_all\jmeter_report\html\TestReport.html
+     [xslt] Loading stylesheet E:\apache-jmeter-5.3\extras\jmeter.results.shanhe.me.xsl
+     [xslt] Processing E:\apache-jmeter-5.3\bin\test\Java_all\jmeter_report\jtl\onlineCountTaskCheck202102270244.jtl to D:\Jenkins\workspace\全流程验证\html\TestReport.html
+     [xslt] Loading stylesheet E:\apache-jmeter-5.3\extras\jmeter.results.shanhe.me.xsl
+
+BUILD SUCCESSFUL
+Total time: 30 seconds
+[全流程验证] $ cmd /c call C:\Windows\TEMP\jenkins7608215739541052622.bat
+
+D:\Jenkins\workspace\全流程验证>E:\apache-jmeter-5.3\bin\test\Java_all\jmeter_report\jtl\runbat.bat
+
+D:\Jenkins\workspace\全流程验证>e:
+
+E:\>cd E:\apache-jmeter-5.3\bin\test\Java_all\jmeter_report\jtl 
+最新的文件是 onlineCountTaskCheck202102270244.jtl 修改时间为：2021/02/27 14:44
+
+---------- ONLINECOUNTTASKCHECK202102270244.JTL
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+    <failure>true</failure>
+Build step 'Execute Windows batch command' marked build as failure
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at PROJECT level E:\apache-jmeter-5.3\bin\test\Java_all\jmeter_report\html to D:\Jenkins\jobs\全流程验证\htmlreports\HTML_20Report
+Email was triggered for: Failure - Any
+Sending email for trigger: Failure - Any
+Sending email to: liuqingshan9@dingtalk.com 1bu-hcwsdgdmbw@dingtalk.com
